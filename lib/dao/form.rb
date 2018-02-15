@@ -505,7 +505,7 @@ module Dao
   # html generation support methods
   #
     def id_for(keys)
-      id = [name, keys.join('-')].compact.join('_')
+      id = [name, keys.join('-')].compact.join('--')
       slug_for(id)
     end
 
@@ -640,7 +640,7 @@ module Dao
     end
 
     def attr_for(string)
-      slug_for(string).gsub(/_/, '-')
+      slug_for(string)
     end
 
     def data_attr_for(string)
@@ -649,10 +649,8 @@ module Dao
 
     def slug_for(string)
       string = string.to_s
-      words = string.to_s.scan(%r/\w+/)
-      words.map!{|word| word.gsub(%r/[^0-9a-zA-Z_:-]/, '')}
-      words.delete_if{|word| word.nil? or word.strip.empty?}
-      words.join('-').downcase.sub(/_+$/, '')
+      words = string.scan(%r/[^\s]+/)
+      words.join('--').downcase
     end
 
     def titleize(string)
