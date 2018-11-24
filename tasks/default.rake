@@ -204,7 +204,3 @@ task :release => [ :release_check, 'manifest:check', :gem ] do
   sh "git push origin v#{This.version}"
   sh "gem push pkg/#{This.platform_gemspec.full_name}.gem"
 end
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream-master
