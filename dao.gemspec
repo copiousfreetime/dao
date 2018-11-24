@@ -109,25 +109,25 @@ Gem::Specification::new do |spec|
 
   spec.test_files = nil
 
-
+  
     spec.add_dependency(*["rails", " ~> 5.2"])
-
+  
     spec.add_dependency(*["map", " ~> 6.0"])
-
+  
     spec.add_dependency(*["fattr", " ~> 2.2"])
-
+  
     spec.add_dependency(*["coerce", " ~> 0.0"])
-
+  
     spec.add_dependency(*["tagz", " ~> 9.9"])
-
+  
     spec.add_dependency(*["multi_json", " ~> 1.0"])
-
+  
     spec.add_dependency(*["uuidtools", " ~> 2.1"])
-
+  
     spec.add_dependency(*["wrap", " ~> 1.5"])
-
+  
     spec.add_dependency(*["rails_current", " ~> 2.0"])
-
+  
 
   spec.extensions.push(*[])
 

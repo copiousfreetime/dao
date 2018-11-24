@@ -1,7 +1,11 @@
 # -*- encoding : utf-8 -*-
 require_relative 'test_helper'
 
+<<<<<<< HEAD
 class Dao::ModuleTest < Dao::TestCase
+=======
+class Dao::ModuleTest < Dao::TestCase 
+>>>>>>> upstream-master
   test 'that dao has a root' do
     assert{ Dao.respond_to?(:root) }
     assert{ Dao.root }

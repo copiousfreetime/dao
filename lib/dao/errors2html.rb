@@ -34,7 +34,11 @@ module Dao
 
       errors = Map.new
       errors[:global] = []
+<<<<<<< HEAD
       errors[:fields] = {}
+=======
+      errors[:fields] = {} 
+>>>>>>> upstream-master
 
       args.each do |e|
         flatten(e).each do |key, messages|
@@ -99,7 +103,11 @@ module Dao
           <% unless errors.fields.empty?  %>
 
             <dl class="errors-fields-list">
+<<<<<<< HEAD
               <%
+=======
+              <% 
+>>>>>>> upstream-master
                 errors.fields.each do |key, messages|
                   title = Array(key).join(" ").titleize
               %>

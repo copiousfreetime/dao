@@ -11,9 +11,15 @@ module Minitest
 
       def report
         super
+<<<<<<< HEAD
 
         puts
 
+=======
+      
+        puts
+      
+>>>>>>> upstream-master
         unless @fast_fail
           #print rerun commands
           failed_or_error_tests=(tests.select {|t| t.failure && !t.skipped? })
@@ -26,13 +32,22 @@ module Minitest
             end
           end
         end
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> upstream-master
         #summary for all suite again
         puts
         print colored_for(suite_result, result_line)
         puts
+<<<<<<< HEAD
 
       end
+=======
+        
+      end  
+>>>>>>> upstream-master
 
       private
 
@@ -55,7 +70,11 @@ module Minitest
             "Failure:\n#{msg}"
           end
         end
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> upstream-master
         def location(exception)
           last_before_assertion = ''
 
@@ -66,8 +85,16 @@ module Minitest
           end
 
           last_before_assertion.sub(/:in .*$/, '')
+<<<<<<< HEAD
         end
+=======
+        end  
+>>>>>>> upstream-master
 
     end
   end
 end
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream-master
